@@ -1,0 +1,31 @@
+basePath: /api/v1
+host: 127.0.0.1:8080
+info:
+  contact:
+    email: gabrian@Ainosi.co.id
+    name: Partner Dashboard
+  description: 'This is a documentation of using RESTfull API for dashboard applications.
+    json version : /swagger/doc.json'
+  license: {}
+  title: Dashboard API Documentation
+  version: "1.0"
+paths:
+  /accounts:
+    get:
+      consumes:
+      - application/json
+      description: get accounts
+      parameters:
+      - description: name search by q
+        in: query
+        name: q
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: ok
+          schema:
+            type: string
+      summary: List accounts
+swagger: "2.0"

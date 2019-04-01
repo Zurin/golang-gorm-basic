@@ -1,0 +1,25 @@
+{
+  "app":{
+    "serverport":"8080"
+  },
+  "databases":[
+    {
+      "name": "db_summary",
+      "driver_name":"postgres",
+      "connection_string":"postgres://postgres:root@127.0.0.1:5432/db_summary?sslmode=disable",
+      "max_connection_open":20
+    },
+    {
+      "name": "db_summary",
+      "driver_name":"postgres",
+      "connection_string":"postgres://postgres:root@127.0.0.1:5432/db_transaction_hot?sslmode=disable",
+      "max_connection_open":20
+    },
+    {
+      "name": "db_summary",
+      "driver_name":"postgres",
+      "connection_string":"postgres://postgres:root@127.0.0.1:5432/gosample_db?sslmode=disable",
+      "max_connection_open":20
+    }
+  ]
+}
